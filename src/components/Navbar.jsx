@@ -50,7 +50,7 @@ function Navbar() {
         //         <Pets sx={{ display: { xs: "block", sm: "none" } }} />
         //     </StyledToolbar>
         // </AppBar>
-        <AppBar position="static">
+        <AppBar position="sticky" style={{ background: 'black', }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -75,7 +75,7 @@ function Navbar() {
                         variant="h6"
                         noWrap
                         component={Link}
-                        to="/"
+                        to="/home"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -179,7 +179,7 @@ function Navbar() {
                             key="home"
                             onClick={handleCloseNavMenu}
                             component={Link}
-                            to="/"
+                            to="/home"
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             HOME
