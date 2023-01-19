@@ -75,7 +75,7 @@ function Navbar() {
                         variant="h6"
                         noWrap
                         component={Link}
-                        to="/home"
+                        to="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -86,7 +86,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        FUNGAMES
                     </Typography>
                     {/* <Typography
                         textAlign="center"
