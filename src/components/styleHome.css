@@ -1,0 +1,21 @@
+
+.homeText {
+    
+    font-size: 5rem;
+    color: brown;
+    font-weight: 1000;
+   text-shadow: 3px 3px rgb(89, 84, 84);
+}
+
+.trendingGames {
+    font-size: 2rem;
+    color:chocolate;
+    font-weight: 500;
+   text-shadow: 1px 1px rgb(89, 84, 84);
+  
+   background-color: antiquewhite;
+   /* align-items: center;
+   justify-content: center; */
+  
+   margin: 50px;
+}
