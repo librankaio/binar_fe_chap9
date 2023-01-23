@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
 import About from "./components/About";
+import Detail from "./components/Detail";
 import NotFound from "./components/NotFound";
 import LoginPage from './components/Login';
 import RegisterPage from './components/Register';
@@ -24,6 +25,7 @@ function App() {
           <Route path=":username" element={<Profile />} />
         </Route>
         <Route path="/about" element={<About />} />
+        <Route path="/detail" element={<Detail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
