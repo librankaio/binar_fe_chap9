@@ -185,13 +185,13 @@ function Navbar() {
                             HOME
                         </Button>
                         <Button
-                            key="profile"
+                            key="games"
                             onClick={handleCloseNavMenu}
                             component={Link}
-                            to="/profile"
+                            to="/games"
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
-                            PROFILE
+                            Games
                         </Button>
                         <Button
                             key="profile"
