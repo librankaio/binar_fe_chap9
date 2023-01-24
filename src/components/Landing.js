@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 // import { styled } from '@mui/system';
 import { styled } from '@mui/material/styles';
 import { Avatar, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Container, Grid, IconButton, Typography } from "@mui/material";
-import Paper from '@mui/material/Paper';
+// import Paper from '@mui/material/Paper';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -32,14 +32,13 @@ const MediumTitle = styled('h3')({
     color: 'white',
 });
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
-
+// const Item = styled(Paper)(({ theme }) => ({
+//     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+//     ...theme.typography.body2,
+//     padding: theme.spacing(1),
+//     textAlign: 'center',
+//     color: theme.palette.text.secondary,
+// }));
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -52,7 +51,7 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-function Landing() {
+const Landing = () => {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -308,6 +307,6 @@ function Landing() {
         </div >
 
     );
-}
+};
 
 export default Landing;
