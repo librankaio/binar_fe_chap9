@@ -35,6 +35,7 @@ function Home() {
       </div>
       <div style={{ textAlign: "center" }} className="homeText">
         <div>Main Game Impian</div>
+        
       </div>
       <div>
         <div className="trendingGames">TRENDING GAMES</div>
