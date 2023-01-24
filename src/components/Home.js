@@ -21,7 +21,7 @@ import guntingImage from "../assets/gunting.jpeg"
 
 function Home() {
   return (
-    <div>
+    <div className="bgGames">
       <Navbar />
       <div>
         <Grid

@@ -23,9 +23,9 @@ import guntingImage from "../assets/gunting.jpeg"
 
 function Games() {
   return (
-    <div>
+    <div className="bgGames">
       <Navbar />
-      <div>
+      <div >
         <Grid
           container
           columns={12}

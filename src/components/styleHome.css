@@ -1,8 +1,11 @@
+.bgGames {
+background: url("/public/assets/the-games-bg.jpg");
+}
 
 .homeText {
     
     font-size: 5rem;
-    color:rgb(108, 46, 2);
+    color:rgb(230, 151, 95);
     font-weight: 1000;
    text-shadow: 3px 3px rgb(89, 84, 84);
 }
@@ -13,7 +16,7 @@
     font-weight: 500;
    text-shadow: 1px 1px rgb(89, 84, 84);
   
-   background-color: rgb(6, 3, 0);
+   background-color: rgb(87, 81, 74);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -27,7 +30,7 @@
     font-weight: 500;
    text-shadow: 1px 1px rgb(89, 84, 84);
   
-   background-color: rgb(6, 3, 0);
+   background-color: rgb(87, 81, 74);
    display: flex;
    align-items: center;
    justify-content: center;
