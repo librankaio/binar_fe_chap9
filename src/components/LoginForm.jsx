@@ -80,18 +80,24 @@ const LoginForm = ({ setAuth }) => {
             //     }),
             // });
 
-            let res = axios.post('http://localhost:8000/login', {
+            let res = await axios.post('http://localhost:8000/login', {
                 username: username,
                 password: password,
             })
             // let resJson = await res.json();
             console.log(res)
-            if (res.message === "success") {
-                setUsername("");
-                setPassword("");
-                setMessage("User created successfully");
+            if (res.data.message === "success") {
+                // setUsername("");
+                // setPassword("");
+                // setMessage("User created successfully");
+                setTimeout(() => {
+                    console.log("Logged in");
+                    // setAuth(false);
+                    setAuth(true);
+                    navigate(from, { replace: true });
+                }, 2000);
             } else {
-                setMessage("Some error occured");
+                console.log(res.data.message)
             }
         } catch (err) {
             console.log(err);
@@ -127,8 +133,8 @@ const LoginForm = ({ setAuth }) => {
                             label="Email Address"
 
                             //DARI DOKUMENTASI
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
                             //DARI DOKUMENTASI
 
                             {...getFieldProps("email")}
