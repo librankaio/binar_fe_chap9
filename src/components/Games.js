@@ -12,10 +12,12 @@ import Grid from "@mui/material/Grid";
 import britishImage from "../assets/british.jpeg";
 import nostalgicImage from "../assets/nostalgic.jpeg";
 import farcryImage from "../assets/farcry.jpeg";
-// import nostalgic2Image from "../assets/nostalgic2.jpeg";
+
+import nostalgic2Image from "../assets/nostalgic2.jpeg";
 import suicideImage from "../assets/suicide.jpeg";
 import wiiuImage from "../assets/wiiu.gif";
-// import marioImage from "../assets/mario.jpeg";
+import marioImage from "../assets/mario.jpeg";
+
 // import batuImage from "../assets/batu.png"
 import guntingImage from "../assets/gunting.jpeg"
 
@@ -35,7 +37,8 @@ function Games() {
       </div>
       <div style={{ textAlign: "center" }} className="homeText">
         <div>Mainkan Jarimu</div>
-        <input className="gamesSearch" placeholder="Cari Games ..."/>
+
+
       </div>
       <div>
         <div className="trendingGames">SINGLE GAMES</div>
