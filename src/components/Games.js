@@ -35,6 +35,10 @@ function Games() {
       </div>
       <div style={{ textAlign: "center" }} className="homeText">
         <div>Mainkan Jarimu</div>
+        <input
+            placeholder="Cari Movie ..."
+            className="gamesSearch"            
+          />
       </div>
       <div>
         <div className="trendingGames">SINGLE GAMES</div>
