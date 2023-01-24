@@ -263,131 +263,131 @@ function Home() {
       <div>
         <div className="community">COMMUNITY</div>
         <div>
-        <Grid container spacing={0} columns={16}>
-          <Grid
-            container
-            item
-            xs={3}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <div>
-              <Card sx={{ width: 250 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="210"
-                    image={nostalgic2Image}
-                    alt="nostalgic2"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Jakarta Gamers
-                    </Typography>                    
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Gabung
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
+          <Grid container spacing={0} columns={16}>
+            <Grid
+              container
+              item
+              xs={3}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <div>
+                <Card sx={{ width: 250 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="210"
+                      image={nostalgic2Image}
+                      alt="nostalgic2"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Jakarta Gamers
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Gabung
+                    </Button>
+                  </CardActions>
+                </Card>
+              </div>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={3}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <div>
+                <Card sx={{ width: 250 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="210"
+                      image={nostalgic2Image}
+                      alt="nostalgic2"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Solo Gamers
+                      </Typography>
+
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Gabung
+                    </Button>
+                  </CardActions>
+                </Card>
+              </div>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={3}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <div>
+                <Card sx={{ width: 250 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="210"
+                      image={nostalgic2Image}
+                      alt="nostalgic2"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Lamongan Gamers
+                      </Typography>
+
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Gabung
+                    </Button>
+                  </CardActions>
+                </Card>
+              </div>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={3}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <div>
+                <Card sx={{ width: 250 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="210"
+                      image={nostalgic2Image}
+                      alt="nostalgic2"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Blitar Gamers
+                      </Typography>
+
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      Gabung
+                    </Button>
+                  </CardActions>
+                </Card>
+              </div>
+            </Grid>
           </Grid>
-          <Grid
-            container
-            item
-            xs={3}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <div>
-              <Card sx={{ width: 250 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="210"
-                    image={nostalgic2Image}
-                    alt="nostalgic2"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Solo Gamers
-                    </Typography>
-                    
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Gabung
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-          </Grid>
-          <Grid
-            container
-            item
-            xs={3}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <div>
-              <Card sx={{ width: 250 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="210"
-                    image={nostalgic2Image}
-                    alt="nostalgic2"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lamongan Gamers
-                    </Typography>
-                    
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Gabung
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-          </Grid>
-          <Grid
-            container
-            item
-            xs={3}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <div>
-              <Card sx={{ width: 250 }}>
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    height="210"
-                    image={nostalgic2Image}
-                    alt="nostalgic2"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Blitar Gamers
-                    </Typography>
-                    
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    Gabung
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-          </Grid>
-        </Grid>
         </div>
         <br />
       </div>

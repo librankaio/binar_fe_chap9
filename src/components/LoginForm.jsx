@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
@@ -28,7 +29,7 @@ const animate = {
     },
 };
 
-const LoginForm = ({ }) => {
+const LoginForm = ({ setAuth }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/home";
@@ -54,6 +55,7 @@ const LoginForm = ({ }) => {
             setTimeout(() => {
                 console.log("submited!!");
                 // setAuth(false);
+                setAuth(true);
                 navigate(from, { replace: true });
             }, 2000);
         },
@@ -62,9 +64,44 @@ const LoginForm = ({ }) => {
     const { errors, touched, values, isSubmitting, handleSubmit, getFieldProps } =
         formik;
 
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [message, setMessage] = useState("");
+
+    let handleSubmitForm = async (e) => {
+        e.preventDefault();
+        console.log(username, password)
+        try {
+            // let res = await fetch("http://localhost:8000/login", {
+            //     method: "POST",
+            //     body: JSON.stringify({
+            //         username: username,
+            //         password: password,
+            //     }),
+            // });
+
+            let res = axios.post('http://localhost:8000/login', {
+                username: username,
+                password: password,
+            })
+            // let resJson = await res.json();
+            console.log(res)
+            if (res.message === "success") {
+                setUsername("");
+                setPassword("");
+                setMessage("User created successfully");
+            } else {
+                setMessage("Some error occured");
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    };
+
     return (
         <FormikProvider value={formik}>
-            <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
+            {/* <Form autoComplete="off" noValidate onSubmit={handleSubmit}> */}
+            <Form autoComplete="off" onSubmit={handleSubmitForm}>
                 <Box
                     component={motion.div}
                     animate={{
@@ -83,17 +120,23 @@ const LoginForm = ({ }) => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={animate}
                     >
-                        <TextField
+                        {/* <TextField
                             fullWidth
                             autoComplete="username"
                             type="email"
                             label="Email Address"
+
+                            //DARI DOKUMENTASI
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            //DARI DOKUMENTASI
+
                             {...getFieldProps("email")}
                             error={Boolean(touched.email && errors.email)}
                             helperText={touched.email && errors.email}
-                        />
+                        /> */}
 
-                        <TextField
+                        {/* <TextField
                             fullWidth
                             autoComplete="current-password"
                             type={showPassword ? "text" : "password"}
@@ -116,6 +159,24 @@ const LoginForm = ({ }) => {
                                     </InputAdornment>
                                 ),
                             }}
+
+                            //DARI DOKUMENTASI
+                            value={password}
+                            onChange={(e) => setPassword(e.target.password)}
+                        //DARI DOKUMENTASI
+                        /> */}
+
+                        <input
+                            type="text"
+                            value={username}
+                            placeholder="Username"
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+                        <input
+                            type="text"
+                            value={password}
+                            placeholder="Password"
+                            onChange={(e) => setPassword(e.target.value)}
                         />
                     </Box>
 
