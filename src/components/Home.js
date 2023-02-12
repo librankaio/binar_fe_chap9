@@ -51,31 +51,34 @@ function Home() {
               justifyContent="center"
             >
               <div>
-                <Card sx={{ maxWidth: 400 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="420"
-                      image={britishImage}
-                      alt="british image"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        British Women
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      Play
-                    </Button>
-                  </CardActions>
-                </Card>
+                <a href="detail/british-women">
+                  <Card sx={{ maxWidth: 400 }}>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="420"
+                        image={britishImage}
+                        alt="british image"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          British Women
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Play
+                      </Button>
+                    </CardActions>
+                  </Card>
+
+                </a>
               </div>
             </Grid>
             <Grid
@@ -86,31 +89,34 @@ function Home() {
               justifyContent="center"
             >
               <div className="">
-                <Card sx={{ maxWidth: 400 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="420"
-                      image={nostalgicImage}
-                      alt="nostalgic"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Nostalgic
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      Play
-                    </Button>
-                  </CardActions>
-                </Card>
+                <a href="detail/nostalgic">
+                  <Card sx={{ maxWidth: 400 }}>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="420"
+                        image={nostalgicImage}
+                        alt="nostalgic"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          Nostalgic
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Play
+                      </Button>
+                    </CardActions>
+                  </Card>
+
+                </a>
               </div>
             </Grid>
             <Grid
@@ -121,31 +127,34 @@ function Home() {
               justifyContent="center"
             >
               <div className="">
-                <Card sx={{ maxWidth: 400 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="420"
-                      image={farcryImage}
-                      alt="far cry"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Far Cry 4
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      Play
-                    </Button>
-                  </CardActions>
-                </Card>
+                <a href="detail/far-cry-4">
+                  <Card sx={{ maxWidth: 400 }}>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="420"
+                        image={farcryImage}
+                        alt="far cry"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          Far Cry 4
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Play
+                      </Button>
+                    </CardActions>
+                  </Card>
+
+                </a>
               </div>
             </Grid>
           </Grid>
@@ -162,31 +171,34 @@ function Home() {
               justifyContent="center"
             >
               <div>
-                <Card sx={{ maxWidth: 400 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="420"
-                      image={nostalgic2Image}
-                      alt="nostalgic2"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Nostalgic 2
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      Play
-                    </Button>
-                  </CardActions>
-                </Card>
+                <a href="detail/nostalgic-2">
+                  <Card sx={{ maxWidth: 400 }}>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="420"
+                        image={nostalgic2Image}
+                        alt="nostalgic2"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          Nostalgic 2
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Play
+                      </Button>
+                    </CardActions>
+                  </Card>
+
+                </a>
               </div>
             </Grid>
             <Grid
@@ -197,31 +209,34 @@ function Home() {
               justifyContent="center"
             >
               <div className="">
-                <Card sx={{ maxWidth: 400 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="420"
-                      image={suicideImage}
-                      alt="suicide"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Lollipop Chainsaw
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      Play
-                    </Button>
-                  </CardActions>
-                </Card>
+                <a href="detail/lollipop-chainsaw">
+                  <Card sx={{ maxWidth: 400 }}>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="420"
+                        image={suicideImage}
+                        alt="suicide"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          Lollipop Chainsaw
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Play
+                      </Button>
+                    </CardActions>
+                  </Card>
+
+                </a>
               </div>
             </Grid>
             <Grid
@@ -232,31 +247,34 @@ function Home() {
               justifyContent="center"
             >
               <div className="">
-                <Card sx={{ maxWidth: 400 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="420"
-                      image={wiiuImage}
-                      alt="wiiu"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        Wiii UUU
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      Play
-                    </Button>
-                  </CardActions>
-                </Card>
+                <a href="detail/wiiUUU">
+                  <Card sx={{ maxWidth: 400 }}>
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        height="420"
+                        image={wiiuImage}
+                        alt="wiiu"
+                      />
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                          Wiii UUU
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                          Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button size="small" color="primary">
+                        Play
+                      </Button>
+                    </CardActions>
+                  </Card>
+
+                </a>
               </div>
             </Grid>
           </Grid>

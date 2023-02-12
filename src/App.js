@@ -5,7 +5,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
 import About from "./components/About";
-import Detail from "./components/Detail";
+import RockPaperScissor from "./components/Detail";
+import BritishWomen from "./components/Detail2";
+import Nostalgic from "./components/Detail3";
+import Farcry4 from "./components/Detail4";
+import Nostalgic2 from "./components/Detail5";
+import LollipopChainsaw from "./components/Detail6";
+import Wiu from "./components/Detail7";
 import NotFound from "./components/NotFound";
 import LoginPage from './components/Login';
 import RegisterPage from './components/Register';
@@ -25,7 +31,13 @@ function App() {
           <Route path=":username" element={<Profile />} />
         </Route>
         <Route path="/about" element={<About />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/detail/rock-paper-scissor" element={<RockPaperScissor />} />
+        <Route path="/detail/british-women" element={<BritishWomen />} />
+        <Route path="/detail/nostalgic" element={<Nostalgic />} />
+        <Route path="/detail/far-cry-4" element={<Farcry4 />} />
+        <Route path="/detail/nostalgic-2" element={<Nostalgic2 />} />
+        <Route path="/detail/lollipop-chainsaw" element={<LollipopChainsaw />} />
+        <Route path="/detail/wiiUUU" element={<Wiu />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
