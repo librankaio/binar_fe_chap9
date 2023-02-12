@@ -18,12 +18,12 @@ import StarIcon from '@mui/icons-material/Star';
 
 import Grid from "@mui/material/Grid";
 import britishImage from "../assets/british.jpeg";
-import rockpaperstrategy from "../assets/rockpaperstrategy-1600.jpg";
 
-let abc = "Joko Sasongko ";
+
+let abc = "Joko Priyatno ";
 let abc2 = [9999, 8888, 7777];
 
-function RockPaperScissor() {
+function BritishWomen() {
   return (
     <div>
       <Navbar />
@@ -42,12 +42,12 @@ function RockPaperScissor() {
               justifyContent="center"
             >
               <div>
-                <Card sx={{ maxWidth: 750 }}>
+                <Card sx={{ minWidth: 750 }}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
                       height="420"
-                      image={rockpaperstrategy}
+                      image={britishImage}
                       alt="british image"
                     />
                   </CardActionArea>
@@ -102,12 +102,12 @@ function RockPaperScissor() {
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        Rock Paper Scissor
+                        British Women
                       </Typography>
                       <Typography variant="body2" color="text.primer">
-                        Gunting Batu Kertas (Rock Paper Scissors) adalah permainan sederhana dimana dua atau lebih pemain
-                        membentuk gestur secara bersamaan.
-                        Dalam permainan ini, ada tiga gestur yang dapat dipilih, yaitu gunting, batu, dan kertas.
+                        Game ini mengambil peran utama seorang wanita dan bertemakan petualangan.
+                        Wanita ini memiliki misi untuk menemukan harta karu terbesar di belantara 
+                        hutan di Amerika Selatan
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -132,4 +132,4 @@ function RockPaperScissor() {
   );
 }
 
-export default RockPaperScissor;
+export default BritishWomen;

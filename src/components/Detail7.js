@@ -17,13 +17,13 @@ import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
 
 import Grid from "@mui/material/Grid";
-import britishImage from "../assets/british.jpeg";
-import rockpaperstrategy from "../assets/rockpaperstrategy-1600.jpg";
+import wiiuImage from "../assets/wiiu.gif";
 
-let abc = "Joko Sasongko ";
+
+let abc = "Joko Sumarno";
 let abc2 = [9999, 8888, 7777];
 
-function RockPaperScissor() {
+function Wiu() {
   return (
     <div>
       <Navbar />
@@ -42,12 +42,12 @@ function RockPaperScissor() {
               justifyContent="center"
             >
               <div>
-                <Card sx={{ maxWidth: 750 }}>
+                <Card sx={{ minWidth: 750 }}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
                       height="420"
-                      image={rockpaperstrategy}
+                      image={wiiuImage}
                       alt="british image"
                     />
                   </CardActionArea>
@@ -102,12 +102,12 @@ function RockPaperScissor() {
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        Rock Paper Scissor
+                        Wii UUU
                       </Typography>
                       <Typography variant="body2" color="text.primer">
-                        Gunting Batu Kertas (Rock Paper Scissors) adalah permainan sederhana dimana dua atau lebih pemain
-                        membentuk gestur secara bersamaan.
-                        Dalam permainan ini, ada tiga gestur yang dapat dipilih, yaitu gunting, batu, dan kertas.
+                        Lizards are a widespread group of squamate reptiles,
+                          with over 6,000 species, ranging across all continents
+                          except Antarctica
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -132,4 +132,4 @@ function RockPaperScissor() {
   );
 }
 
-export default RockPaperScissor;
+export default Wiu;
