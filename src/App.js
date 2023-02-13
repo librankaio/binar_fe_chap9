@@ -8,6 +8,7 @@ import Games from "./components/Games";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Detail from "./components/Detail";
+import Info from './components/Info';
 import NotFound from "./components/NotFound";
 import LoginPage from './components/Login';
 import RegisterPage from './components/Register';
@@ -45,6 +46,7 @@ function App() {
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/detail" element={<Detail />} />
+        <Route path="/info" element={<Info />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {/* </BrowserRouter> */}
