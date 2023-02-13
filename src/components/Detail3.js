@@ -17,13 +17,13 @@ import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
 
 import Grid from "@mui/material/Grid";
-import britishImage from "../assets/british.jpeg";
-import rockpaperstrategy from "../assets/rockpaperstrategy-1600.jpg";
+import nostalgicImage from "../assets/nostalgic.jpeg"
 
-let abc = "Joko Sasongko ";
+
+let abc = "Joko Wiyatno ";
 let abc2 = [9999, 8888, 7777];
 
-function RockPaperScissor() {
+function Nostalgic() {
   return (
     <div>
       <Navbar />
@@ -42,12 +42,12 @@ function RockPaperScissor() {
               justifyContent="center"
             >
               <div>
-                <Card sx={{ maxWidth: 750 }}>
+                <Card sx={{ minWidth: 750 }}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
                       height="420"
-                      image={rockpaperstrategy}
+                      image={nostalgicImage}
                       alt="british image"
                     />
                   </CardActionArea>
@@ -102,12 +102,11 @@ function RockPaperScissor() {
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        Rock Paper Scissor
+                        Nostalgia
                       </Typography>
                       <Typography variant="body2" color="text.primer">
-                        Gunting Batu Kertas (Rock Paper Scissors) adalah permainan sederhana dimana dua atau lebih pemain
-                        membentuk gestur secara bersamaan.
-                        Dalam permainan ini, ada tiga gestur yang dapat dipilih, yaitu gunting, batu, dan kertas.
+                        Game ini merupakan sebuah remake dari game dahulu yang bertujuan
+                        agar pemain yang memainkan game ini bernostalgia
                       </Typography>
                     </CardContent>
                   </CardActionArea>
@@ -132,4 +131,4 @@ function RockPaperScissor() {
   );
 }
 
-export default RockPaperScissor;
+export default Nostalgic;
