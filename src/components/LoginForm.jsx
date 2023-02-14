@@ -4,6 +4,9 @@ import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import { Form, FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
+import { useSelector, useDispatch } from 'react-redux'
+import { setUser } from '../slicer/userSlicer'
+
 import {
     Box,
     Checkbox,
@@ -30,6 +33,19 @@ const animate = {
 };
 
 const LoginForm = ({ setAuth }) => {
+    const user = useSelector(state => state.user)
+    const dispatch = useDispatch()
+
+    const getUserData = () => {
+        dispatch(
+            setUser({
+                name: username,
+                score: score,
+            })
+        )
+    }
+
+
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/home";
@@ -67,6 +83,7 @@ const LoginForm = ({ setAuth }) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    var score = 0;
 
     let handleSubmitForm = async (e) => {
         e.preventDefault();
@@ -91,7 +108,9 @@ const LoginForm = ({ setAuth }) => {
                 // setPassword("");
                 // setMessage("User created successfully");
                 setTimeout(() => {
+                    score = res.data.score;
                     console.log("Logged in");
+                    getUserData();
                     // setAuth(false);
                     setAuth(true);
                     navigate(from, { replace: true });

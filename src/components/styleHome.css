@@ -1,50 +1,62 @@
 .bgGames {
-background: url("/public/assets/the-games-bg.jpg");
+  background: url("/public/assets/the-games-bg.jpg");
 }
 
 .homeText {
-    
-    font-size: 5rem;
-    color:rgb(230, 151, 95);
-    font-weight: 1000;
-   text-shadow: 3px 3px rgb(89, 84, 84);
+  font-size: 5rem;
+  color: rgb(230, 151, 95);
+  font-weight: 1000;
+  text-shadow: 3px 3px rgb(89, 84, 84);
 }
 
 .trendingGames {
-    font-size: 2rem;
-    color:rgb(230, 151, 95);
-    font-weight: 500;
-   text-shadow: 1px 1px rgb(89, 84, 84);
-  
-   background-color: rgb(87, 81, 74);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  
-   margin: 50px;
+  font-size: 2rem;
+  color: rgb(230, 151, 95);
+  font-weight: 500;
+  text-shadow: 1px 1px rgb(89, 84, 84);
+
+  background-color: rgb(87, 81, 74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 50px;
+}
+
+.recentGame {
+  font-size: 2rem;
+  color: rgb(230, 151, 95);
+  font-weight: 500;
+  text-shadow: 1px 1px rgb(89, 84, 84);
+
+  background-color: rgb(87, 81, 74);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 50px;
+  margin: 50px;
 }
 
 .community {
-    font-size: 2rem;
-    color:rgb(230, 151, 95);
-    font-weight: 500;
-   text-shadow: 1px 1px rgb(89, 84, 84);
-  
-   background-color: rgb(87, 81, 74);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  
-   margin: 50px;
+  font-size: 2rem;
+  color: rgb(230, 151, 95);
+  font-weight: 500;
+  text-shadow: 1px 1px rgb(89, 84, 84);
+
+  background-color: rgb(87, 81, 74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 50px;
 }
 
 .gamesSearch {
-    height: 60px;
-    font-size: 24px;
-    margin-bottom: 30px;
-    padding: 20px;
-    font-weight: bold;
-    width: 400px;
-    margin-top: 20px;
-   
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-weight: bold;
+  width: 400px;
+  margin-top: 20px;
 }

@@ -15,6 +15,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { useSelector } from 'react-redux'
 
 const StyledToolbar = styled(Toolbar)({
     display: "flex",
@@ -26,6 +27,9 @@ const pages = ['Home', 'Profile', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
+    const user = useSelector(state => state.user)
+
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -203,7 +207,58 @@ function Navbar() {
                             ABOUT
                         </Button>
                     </Box>
-
+                    {user.name != null &&
+                        <Box sx={{ flexGrow: 0 }}>
+                            <Button
+                                key="profile"
+                                // onClick={handleCloseNavMenu}
+                                component={Link}
+                                to="#"
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                {user.name}
+                            </Button>
+                        </Box>
+                    }
+                    {user.name != null &&
+                        <Box sx={{ flexGrow: 0 }}>
+                            <Button
+                                key="profile"
+                                // onClick={handleCloseNavMenu}
+                                component={Link}
+                                to="#"
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                Score : {user.score}
+                            </Button>
+                        </Box>
+                    }
+                    {user.name == null || user.name == '' &&
+                        <Box sx={{ flexGrow: 0 }}>
+                            <Button
+                                key="profile"
+                                onClick={handleCloseNavMenu}
+                                component={Link}
+                                to="/login"
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                Login {user.name}
+                            </Button>
+                        </Box>
+                    }
+                    {user.name == null || user.name == '' &&
+                        <Box sx={{ flexGrow: 0 }}>
+                            <Button
+                                key="profile"
+                                onClick={handleCloseNavMenu}
+                                component={Link}
+                                to="/register"
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                Register
+                            </Button>
+                        </Box>
+                    }
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
